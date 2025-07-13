@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon src/server.ts",
     "start": "ts-node src/server.ts",
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "formet:check": "prettier . --check",
     "formet:fix": "prettier . --write",
     "lint": "eslint .",
